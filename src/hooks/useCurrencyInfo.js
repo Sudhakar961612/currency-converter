@@ -28,7 +28,7 @@ export default useCurrencyInfo;
 //     fetch(`https://2024-03-06.currency-api.pages.dev/v1/currencies/${currency}.json`)
 //       .then((res) => {
 //         if (!res.ok) {
-//           throw new Error('Network response was not ok');
+//           throw new Error("Network response was not ok");
 //         }
 //         return res.json();
 //       })
