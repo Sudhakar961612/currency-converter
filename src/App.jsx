@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+
 import { InputBox } from "./components";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
@@ -26,7 +26,7 @@ function App() {
     <div
       className='w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat'
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1549421263-6064833b071b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGN1cnJlbmN5JTIwZXhjaGFuZ2V8ZW58MHx8MHx8fDA%3D')`,
+        backgroundImage: `url('https://png.pngtree.com/thumb_back/fh260/background/20220512/pngtree-growing-chart-against-the-background-of-the-usa-america-flag-candlestick-image_1298780.jpg')`,
       }}>
       <div className='w-full'>
         <div className='w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30'>
@@ -48,7 +48,7 @@ function App() {
               </button>
             </div>
             <div className='w-full mt-1 mb-4'>
-              <InputBox label='To' amount={convertedAmount} currencyOptions={options} onCurrencyChange={(currency) => setTo(currency)} selectCurrency={from} amountDisable />
+              <InputBox label='To' amount={convertedAmount} currencyOptions={options} onCurrencyChange={(currency) => setTo(currency)} selectCurrency={to} amountDisable />
             </div>
             <button type='submit' className='w-full bg-blue-600 text-white px-4 py-3 rounded-lg'>
               Convert {from.toUpperCase()} to {to.toUpperCase()}
